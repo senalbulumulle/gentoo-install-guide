@@ -29,4 +29,10 @@ emerge @world
 ```
 
 
-Here is how you are able to add packages to `ACCEPT_KEYWORDS`
+Here is how you are able to add packages to `ACCEPT_KEYWORDS`.
+Here is just an example...
+
+```shell
+echo "www-client/firefox-bin ~amd64" >> /etc/portage/package.accept_keywords/firefox-bin
+```
+

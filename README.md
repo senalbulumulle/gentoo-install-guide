@@ -18,3 +18,12 @@ to sync the repositories:
 ```shell
 emerge --sync
 ```
+
+Also the most important thing is to also update all 
+the packages. (Depends...). Don't use this command..
+unless you are ready to make Gentoo to take it's 
+own time to compile and update all the packages. 
+
+```shell
+emerge @world
+```

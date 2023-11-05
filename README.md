@@ -27,3 +27,6 @@ own time to compile and update all the packages.
 ```shell
 emerge @world
 ```
+
+
+Here is how you are able to add packages to `ACCEPT_KEYWORDS`

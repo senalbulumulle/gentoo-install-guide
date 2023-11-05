@@ -36,3 +36,11 @@ Here is just an example...
 echo "www-client/firefox-bin ~amd64" >> /etc/portage/package.accept_keywords/firefox-bin
 ```
 
+
+
+This is where we are able to accept keywords for `xorg`.
+
+
+```shell
+echo "x11-base/xorg-apps ~amd64" >> /etc/portage/package.accept_keywords/xorg-apps
+```

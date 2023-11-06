@@ -41,3 +41,16 @@ This is where we are able to accept keywords for `xorg`.
 ```shell
 echo "x11-base/xorg-apps ~amd64" >> /etc/portage/package.accept_keywords/xorg-apps
 ```
+
+This is how you are able to edit the `/var/lib/portage/world` file: 
+
+```shell
+app-arch/zstd
+app-portage/gentoolkit
+dev-vcs/git
+net-misc/dhcpcd
+sys-boot/syslinux
+sys-kernel/dracut
+sys-kernel/gentoo-kernel-bin
+sys-kernel/linux-firmware
+```

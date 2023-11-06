@@ -1,7 +1,8 @@
 # gentoo-install-guide
 
 ## Introduction
-
+Welcome to this wonderful Gentoo Install Guide. This allows you the ability 
+to successfully install Gentoo properly....
 
 ## Preparing
 

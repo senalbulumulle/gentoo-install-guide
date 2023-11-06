@@ -44,6 +44,8 @@ echo "x11-base/xorg-apps ~amd64" >> /etc/portage/package.accept_keywords/xorg-ap
 
 This is how you are able to edit the `/var/lib/portage/world` file: 
 
+Essentially, these are sets that is defined in `world`
+
 ```shell
 app-arch/zstd
 app-portage/gentoolkit

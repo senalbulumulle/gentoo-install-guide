@@ -57,3 +57,9 @@ sys-kernel/dracut
 sys-kernel/gentoo-kernel-bin
 sys-kernel/linux-firmware
 ```
+
+
+## Portage Reference Guide
+
+In this section, this talks about some about the tips and tricks on 
+Portage.

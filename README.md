@@ -72,11 +72,21 @@ The first thing to do is to put this command in before doing the next step. This
 emerge terminus-font && emerge -avuNDa @world
 ```
 
-# 
+Then the next thing to do is to use this to adjust the font in the tty
+
+```shell
+setfont ter-v24b
+```
+
+
 
 ## How to install xorg-drivers
 
 In this section, we are going to install xorg-drivers in Gentoo. To have a graphical interface at least...
+
+```shell
+emerge elogind  && emerge xorg-drivers && emerge -avuNDa @world
+```
 
 ## Portage Reference Guide
 

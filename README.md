@@ -62,27 +62,21 @@ MAKEOPTS="-j6 -l6"
 EMERGE_DEFAULT_OPTS="--ask --verbose --load-average=6 --jobs=6"
 ```
 
-
-
 ## How to adjust font size in the tty
 
 In this section we are going to be talking about how to adjust font size in Gentoo...
 
-The first thing to do is to put this command in before doing the next step. This particular command allows the ability to adjust the font size in the TTY.
+The first thing to do is to put this command in before doing the next step. This particular command allows the ability to adjust the font size in the TTY.  
 
 ```shell
 emerge terminus-font && emerge -avuNDa @world
 ```
 
-
+# 
 
 ## How to install xorg-drivers
 
 In this section, we are going to install xorg-drivers in Gentoo. To have a graphical interface at least...
-
-
-
-
 
 ## Portage Reference Guide
 

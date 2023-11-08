@@ -80,13 +80,39 @@ setfont ter-v24b
 
 
 
-## How to install xorg-drivers
+## How to install xorg
 
-In this section, we are going to install xorg-drivers in Gentoo. To have a graphical interface at least...
+In this section, we are going to install xorg in Gentoo. To have a graphical interface at least...
 
 ```shell
 emerge elogind  && emerge xorg-drivers && emerge -avuNDa @world
 ```
+
+```shell
+emerge xf86-video-intel && emerge avuNDa @world
+```
+
+```shell
+emerge xclock && emerge avuNDa @world
+```
+
+```shell
+emerge xorg- && emerge avuNDa @world
+```
+
+
+
+# 
+
+## How to install eix
+
+In this section, we are going to install eix in Gentoo. To make it easier... at least.
+
+```shell
+emerge eix && emerge -avuNDa @world
+```
+
+
 
 ## Portage Reference Guide
 

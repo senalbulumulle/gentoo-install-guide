@@ -5,9 +5,41 @@
 Welcome to this wonderful Gentoo Install Guide. This allows you the ability 
 to successfully install Gentoo properly....
 
-## Preparing
+## Preparation
 
-Later on...
+In this section, we are going to show you how to use disk preparations before you are able to install Gentoo.
+
+#### Partitioning the disks
+
+I recommend you to use `cfdisk` to partition the disks before installing Gentoo... because it is much easier. 
+
+#### Creating the file systems
+
+```shell
+mkfs.vfat -F 32 /dev/vda1
+```
+
+```shell
+mkswap /dev/sda2
+```
+
+```shell
+mkfs.ext4 /dev/vda3
+```
+
+#### Downloading the Gentoo tarball
+
+Before doing that, the first thing you need to do  is to create a directory inside `/mnt`
+
+```shell
+mkdir --parents /mnt/gentoo
+```
+
+Then you need to install the tarball
+
+```shell
+wget https://distfiles.gentoo.org/releases/amd64/autobuilds/20231105T170200Z/stage3-amd64-openrc-20231105T170200Z.tar.xz
+```
 
 ## Post Install
 
@@ -78,11 +110,27 @@ Then the next thing to do is to use this to adjust the font in the tty
 setfont ter-v24b
 ```
 
-
-
 ## How to install xorg
 
 In this section, we are going to install xorg in Gentoo. To have a graphical interface at least...
+
+Here are the USE-Flags
+
+```shell
+-debug
++elogind
+-minimal
+-suid
+-systemd
+-test
++udev
+-unwind
+-xcsecurity
+-xephyr
+-xnest
++xorg
+-xvfb
+```
 
 ```shell
 emerge elogind  && emerge xorg-drivers && emerge -avuNDa @world
@@ -100,10 +148,6 @@ emerge xclock && emerge avuNDa @world
 emerge xorg- && emerge avuNDa @world
 ```
 
-
-
-# 
-
 ## How to install eix
 
 In this section, we are going to install eix in Gentoo. To make it easier... at least.
@@ -111,8 +155,6 @@ In this section, we are going to install eix in Gentoo. To make it easier... at 
 ```shell
 emerge eix && emerge -avuNDa @world
 ```
-
-
 
 ## Portage Reference Guide
 

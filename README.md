@@ -74,6 +74,20 @@ emerge-webrsync
 Then you need to use this command: 
 
 ```shell
+emerge --sync
+```
+
+Then you need to use this command. This allows the ability to select the profile. Then you need to select the desktop profile... or you can keep it the default one...
+
+```shell
+eselect profile list 
+```
+
+Then you need to have the ability to update the world set.
+
+```shell
+emerge @world
+```
 
 
 

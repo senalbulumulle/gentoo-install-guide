@@ -31,14 +31,38 @@ mkfs.ext4 /dev/vda3
 
 Before doing that, the first thing you need to do  is to create a directory inside `/mnt`
 
+`mkdir --parents /mnt/gentoo`
+
+Then the second thing to do is to mount the drive to `/mnt/gentoo`
+
+`mount /dev/sda3 /mnt/gentoo`
+
+Then the third thing to do is to enable permissions for the directory
+
+`chmod 1777 /mnt/gentoo/tmp`
+
+
+
+Then you need to download the tarball
+
 ```shell
-mkdir --parents /mnt/gentoo
+wget https://distfiles.gentoo.org/releases/amd64/autobuilds/20231105T170200Z/stage3-amd64-openrc-20231105T170200Z.tar.xz`
 ```
 
-Then you need to install the tarball
+
+
+Then you need to unzip the tarball
 
 ```shell
-wget https://distfiles.gentoo.org/releases/amd64/autobuilds/20231105T170200Z/stage3-amd64-openrc-20231105T170200Z.tar.xz
+tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
+```
+
+
+
+Then you need to need to do is to put this command: 
+
+```shell
+arch-chroot /mnt/gentoo
 ```
 
 ## Post Install

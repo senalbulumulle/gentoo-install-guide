@@ -65,7 +65,19 @@ Then you need to need to do is to put this command:
 arch-chroot /mnt/gentoo
 ```
 
-## Post Install
+Then the first thing to do is to use this command:
+
+```shell
+emerge-webrsync
+```
+
+Then you need to use this command: 
+
+```shell
+
+
+
+## Post Install (After Install)
 
 In this section, we are going to talk about setting up stuff in the post installation of Gentoo...
 

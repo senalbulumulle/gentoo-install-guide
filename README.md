@@ -86,7 +86,7 @@ eselect profile list
 Then you need to have the ability to update the world set.
 
 ```shell
-emerge @world
+
 ```
 
 

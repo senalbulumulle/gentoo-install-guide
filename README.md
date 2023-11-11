@@ -41,23 +41,17 @@ Then the third thing to do is to enable permissions for the directory
 
 `chmod 1777 /mnt/gentoo/tmp`
 
-
-
 Then you need to download the tarball
 
 ```shell
 wget https://distfiles.gentoo.org/releases/amd64/autobuilds/20231105T170200Z/stage3-amd64-openrc-20231105T170200Z.tar.xz`
 ```
 
-
-
 Then you need to unzip the tarball
 
 ```shell
 tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
 ```
-
-
 
 Then you need to need to do is to put this command: 
 
@@ -86,10 +80,10 @@ eselect profile list
 Then you need to have the ability to update the world set.
 
 ```shell
-
+emerge avuNDa @world
 ```
 
-
+> Warning: You can also use the post install too as reference as well. 
 
 ## Post Install (After Install)
 
@@ -160,51 +154,7 @@ Then the next thing to do is to use this to adjust the font in the tty
 setfont ter-v24b
 ```
 
-## How to install xorg
-
-In this section, we are going to install xorg in Gentoo. To have a graphical interface at least...
-
-Here are the USE-Flags
-
-```shell
--debug
-+elogind
--minimal
--suid
--systemd
--test
-+udev
--unwind
--xcsecurity
--xephyr
--xnest
-+xorg
--xvfb
-```
-
-```shell
-emerge elogind  && emerge xorg-drivers && emerge -avuNDa @world
-```
-
-```shell
-emerge xf86-video-intel && emerge avuNDa @world
-```
-
-```shell
-emerge xclock && emerge avuNDa @world
-```
-
-```shell
-emerge xorg- && emerge avuNDa @world
-```
-
-## How to install eix
-
-In this section, we are going to install eix in Gentoo. To make it easier... at least.
-
-```shell
-emerge eix && emerge -avuNDa @world
-```
+# 
 
 ## Portage Reference Guide
 

@@ -85,6 +85,12 @@ emerge avuNDa @world
 
 > Warning: You can also use the post install too as reference as well. 
 
+
+
+## Updating Portage:
+
+In this section, we are going to be talking about how to update the portage package manager. 
+
 ## Post Install (After Install)
 
 In this section, we are going to talk about setting up stuff in the post installation of Gentoo...

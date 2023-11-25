@@ -6,7 +6,7 @@
 
 ## This is where you have the ability to create a nice greeter 
 ## before proceeding to go to the next step. 
-#
+
 function greeter() {
     echo """
 ---------------------------------------------------------------------

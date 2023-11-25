@@ -17,8 +17,14 @@ function greeter() {
 }
 
 
+function packageUses() {
+	echo "mmm"
+}
+
+
 
 
 
 
 greeter
+packageUses

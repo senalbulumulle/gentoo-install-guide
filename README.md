@@ -13,6 +13,15 @@ In this section, we are going to show you how to use disk preparations before yo
 
 I recommend you to use `cfdisk` to partition the disks before installing Gentoo... because it is much easier. 
 
+This is an example of what it should look like. This may vary based on your configurations...
+
+```shell
+Device        Start       End   Sectors   Size Type
+/dev/sda1      2048   2099199   2097152     1G EFI System
+/dev/sda2   2099200  10487807   8388608     4G Linux swap
+/dev/sda3  10487808 500117503 489629696 233.5G Linux filesystem
+```
+
 #### Creating the file systems
 
 ```shell
@@ -84,8 +93,6 @@ emerge avuNDa @world
 ```
 
 > Warning: You can also use the post install too as reference as well. 
-
-
 
 ## Updating Portage:
 
